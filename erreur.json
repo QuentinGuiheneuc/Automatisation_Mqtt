@@ -1,0 +1,33 @@
+{
+  "301": {
+    "types": "critique",
+    "text": "Objet Critique Error {}",
+    "icon": "lightbulb.svg",
+    "color": "#e8750d"
+  },
+  "302": {
+    "types": "major",
+    "text": "Objet Critique Error {}",
+    "icon": "lightbulb.svg",
+    "color": "#c05c05"
+  },
+  "303": {
+    "types": "minor",
+    "text": "Objet Minor Error {}",
+    "icon": "lightbulb.svg",
+    "color": "#c03a05"
+  },
+  "304": {
+    "types": "warning",
+    "text": "Objet Critique Error {}",
+    "icon": "lightbulb.svg",
+    "color": "#ff0000"
+  },
+  "305": {
+    "types": "disconnect",
+    "text": "{} is Disconnected",
+    "icon": "power.svg",
+    "color": "#ff0000"
+  }
+}
+

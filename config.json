@@ -1,0 +1,27 @@
+{
+  "mqtt": {
+    "serverUrl": "ip server mqtt",
+    "port": 1883,
+    "username": "",
+    "password": "",
+    "clientId": "my_mqtt_python_client",
+    "device_name": "My Python MQTT device",
+    "separation": ";"
+  },
+  "mysql": {
+    "host": "ip server mysql",
+    "port": 3306,
+    "user": "",
+    "password": "",
+    "database": "bbd_projet"
+  },
+  "socket": {
+    "host": "ip local",
+    "port": 65000,
+    "buff": 2000,
+    "separation": ";",
+    "nb_workers": 10,
+    "encode": "utf-8",
+    "white_list_ip": ["ip local"]
+  }
+}
