@@ -1,5 +1,5 @@
 <?php
-class treert {
+class socket_mqtt {
 
     public function MQTT_multiservice($in,$json=true) {
         $configJson = json_decode(file_get_contents("config/config.json"),true);
