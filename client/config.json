@@ -1,0 +1,51 @@
+{
+  "mqtt": {
+    "host": "quentinguiheneuc.fr",
+    "port": 1883,
+    "username": "serv",
+    "password": "quentin",
+    "uid": 4563210789,
+    "separation": ";",
+    "topic": "prise",
+    "name_client_flie": "client.txt"
+  },
+  "action": {
+    "Button_1": {
+      "type": "button",
+      "pullUpDnControl": "up",
+      "pin": 23,
+      "mode": "in",
+      "mqtt": {
+        "code_ex": 200
+      }
+    },
+    "Button_2": {
+      "type": "button",
+      "pullUpDnControl": "up",
+      "pin": 24,
+      "mode": "in",
+      "mqtt": {
+        "code_ex": 201
+      }
+    },
+    "Button_3": {
+      "type": "swich",
+      "pullUpDnControl": "up",
+      "pin": 17,
+      "mode": "in",
+      "mqtt": {
+        "code_ex": 202
+      }
+    },
+    "led_1": {
+      "type": "led",
+      "pin": 16,
+      "mode": "out",
+      "pullUpDnControl": "",
+      "mqtt": {
+        "code_in": 202,
+        "value_in": true
+      }
+    }
+  }
+}

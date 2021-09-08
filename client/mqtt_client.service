@@ -1,0 +1,14 @@
+[Unit]
+Description = Client Mqtt
+After=multi-user.target
+
+[Service]
+User=pi
+Type=forking
+WorkingDirectory=/home/pi/
+ExecStart= python3 mqtt.py
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target
