@@ -6,12 +6,15 @@ port = 65000
 
 
 def sock_envoie(sock):
-  with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((host, port))
-    s.sendall(sock.encode('utf-8'))
-    buff = s.recv(512)
-    print(buff.decode())
-
+      try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+          s.connect((host, port))
+          s.sendall(sock.encode('utf-8'))
+          buff = s.recv(512)
+          print(buff.decode())
+      except:
+          print("Connection False")
+  
 while True:
     for i in range(1):
         print("_________________________________________")
@@ -19,6 +22,7 @@ while True:
         print("| Stop Server --> sp                     |")
         print("| Status Server --> st                   |")
         print("| Select all topic prise --> topic       |")
+        print("| Select all objet is co --> is          |")
         print("| exit progarme --> exit                 |")
         print("__________________________________________")
     mode= str(input("mode:"))
@@ -30,5 +34,7 @@ while True:
           sock_envoie("server;status")
     elif mode == "topic":
           sock_envoie("objet;topic;prise")
+    elif mode == "is":
+          sock_envoie("objet;is_co")
     elif mode=="exit": # Quit
         break

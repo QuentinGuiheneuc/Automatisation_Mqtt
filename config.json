@@ -1,27 +1,41 @@
 {
+  "start": true,
   "mqtt": {
-    "serverUrl": "ip server mqtt",
+    "serverUrl": "ip server MQtt",
     "port": 1883,
-    "username": "",
-    "password": "",
+    "username": "user",
+    "password": "password",
     "clientId": "my_mqtt_python_client",
     "device_name": "My Python MQTT device",
     "separation": ";"
   },
   "mysql": {
-    "host": "ip server mysql",
+    "host": "localhost",
     "port": 3306,
-    "user": "",
-    "password": "",
-    "database": "bbd_projet"
+    "user": "pma",
+    "password": "password",
+    "database": ""
   },
   "socket": {
-    "host": "ip local",
+    "host": "ip du socket",
     "port": 65000,
     "buff": 2000,
     "separation": ";",
-    "nb_workers": 10,
+    "nb_workers": 1,
     "encode": "utf-8",
-    "white_list_ip": ["ip local"]
+    "white_list_ip": ["ip white lise"]
+  },
+  "function": {
+    "swich": {
+      "value": false
+    },
+    "button": {
+      "value": false
+    },
+    "va&vi": {
+      "mqtt_status": {
+        "": ""
+      }
+    }
   }
 }
